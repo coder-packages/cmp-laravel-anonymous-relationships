@@ -1,0 +1,28 @@
+{
+    "name": "larapackages/anonymous-relationships",
+    "description": "Laravel anonymous relationships in eloquent",
+    "keywords": ["laravel", "eloquent relationships"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Manukian",
+            "email": "alikmanukian@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Larapackages\\AnonymousRelationships\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Larapackages\\AnonymousRelationships\\AnonymousRelationshipsServiceProvider"
+            ]
+        }
+    },
+}
