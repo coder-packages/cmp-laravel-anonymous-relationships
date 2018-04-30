@@ -1,12 +1,12 @@
-#Laravel anonymous relationships in eloquent
+# Laravel anonymous relationships in eloquent
 
-Install package 
+**Install package** 
 
 ```
 composer require larapackages/anonymous-relationships
 ```
 
-Add trait in the model
+**Add trait in the model**
 
 ```
 use Larapackages\AnonymousRelationships\Traits\GeneratesIdentifier;
@@ -17,7 +17,7 @@ class User
 }
 ```
 
-Add method to your model
+**Add method to your model**
 
 ```
 public function getIdentifierAttribute()
@@ -26,14 +26,16 @@ public function getIdentifierAttribute()
 }
 ```
 
-Add relationship like this
+**Add relationship like this**
 
 ```
+// has many relation
 public function addresses()
 {
     return $this->hasMany(Address::class, 'user_id', 'identifier');
 }
 
+// has one relation
 public function address()
 {
     return $this->hasOne(Address::class, 'user_id', 'identifier');
