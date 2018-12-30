@@ -1,5 +1,5 @@
 {
-    "name": "larapackages/anonymous-relationships",
+    "name": "coder-packages/anonymous-relationships",
     "description": "Laravel anonymous relationships in eloquent",
     "keywords": ["laravel", "eloquent relationships"],
     "type": "library",
