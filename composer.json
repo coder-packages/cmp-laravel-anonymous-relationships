@@ -3,6 +3,7 @@
     "description": "Laravel anonymous relationships in eloquent",
     "keywords": ["laravel", "eloquent relationships"],
     "type": "library",
+    "version": "1.0.0",
     "license": "MIT",
     "authors": [
         {
